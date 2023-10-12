@@ -15,16 +15,6 @@ gsap.from(".page1>h1",{
 })
 
 
-
-
-
-
-
-
-
-
-
-
 //video controller
 
 
@@ -135,5 +125,32 @@ function greenitem() {
 greenitem()
 
 
+
+gsap.to(".nav-part1 svg",{
+    transform:"translateY(-100%)",
+    scrollTrigger:{
+        trigger:".page1",
+        // scroller:".main",
+        // markers:true,
+        start:"top 0",
+        end:"top -5%",
+        scrub:true
+    }
+
+})
+
+
+gsap.to(".nav-part2 h3",{
+    transform:"translateY(-300%)",
+    scrollTrigger:{
+        trigger:".page1",
+        // scroller:".main",
+        // markers:true,
+        start:"top 0",
+        end:"top -5%",
+        scrub:true
+    }
+
+})
 
 
